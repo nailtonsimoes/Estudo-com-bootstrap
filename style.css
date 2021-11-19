@@ -4,25 +4,20 @@
 }
 
 .header {
-  height: 100vh;
+  height: 20vh;
 }
 
-.navbar-style {
-  box-shadow: 0 5px 10px #efefef;
-  text-transform: uppercase;
-}
-
-.logo {
+.navbar-brand img {
   height: 48px;
   padding: 2px 10px;
 }
 
-.icon-bar {
-  background: darkorange;
-}
-
 li a {
   color: black;
+}
+
+div.row {
+  margin-top: 10px;
 }
 
 .big-text {
@@ -57,12 +52,15 @@ a.btn:hover {
   transition: 0.3s;
 }
 
-.img-responsive {
-  margin-top: 50px;
+button.btn:hover {
+  background: darkorange;
+  border: none;
+  color: fff;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
 }
 
-/*
-.banner-info,
-.banner-image 
-  margin: 30px 0;
-*/
+button.btn {
+  border: 1px solid darkorange;
+  color: darkorange;
+}
