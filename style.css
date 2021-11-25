@@ -1,6 +1,18 @@
+/*======= RESET PAGE ====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 * {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: darkorange;
 }
 
 .header {
@@ -18,6 +30,8 @@ li a {
 
 div.row {
   margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 3rem;
 }
 
 .big-text {
@@ -63,4 +77,56 @@ button.btn:hover {
 button.btn {
   border: 1px solid darkorange;
   color: darkorange;
+}
+
+footer .container {
+  display: flex;
+}
+
+@media (max-width: 380px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 920px) {
+  footer .container {
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+}
+
+footer .container .sec h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container .sec h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: blueviolet;
+}
+
+footer .container .sec p {
+  color: black;
+}
+
+.sci {
+  margin-top: 20px;
+  display: grid;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
 }
